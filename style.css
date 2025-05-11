@@ -4,6 +4,14 @@ html, body {
     height: 100%;
 }
 
+@font-face {
+    font-family: 'cal_sansregular', 'Times New Roman', Times, serif;
+    src: url('font/calsans-regular-webfont.woff2') format('woff2'),
+         url('font/calsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body {
     display:flex;
     flex-direction:column;
@@ -66,7 +74,9 @@ header {
 
 .descheader {
     font-size:40px;
-    align-items:start;
+    display:flex;
+    align-items:center;
+    gap: 10px;
 }
 
 .weathertemperatures {

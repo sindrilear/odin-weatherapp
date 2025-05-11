@@ -10,35 +10,34 @@
         Sindri's Weather App 
         <div class="searchwrapper">
             <div class="locationwrapper">
-                <input type="search" id="weather-search" placeholder="Search Weather">
-                <button type="button" onclick="searchWeather()">Search</button>
+                <input type="search" id="weather-search" placeholder="City name" required>
             </div>
             <div class="unitwrapper">
                 <label for="units">Unit:</label>
                 <select name="units" id="units">
-                    <option value="US">US</option>
                     <option value="metric">Metric</option>
+                    <option value="us">US</option>
                 </select>
-                <input type="submit" value="Submit">
+                <button type="button" onclick="searchWeather()">Search</button>
             </div>
         </div>
     </header>
     <div class="weatherwrapper">
-        <div class="weatherheader">
-            Reykjavíkurborg, Ísland
+        <div class="weatherheader" id="weatherheader">
+            
         </div>
         <div class="weatherelementswrapper">
             <div class="weatherdescription">
-                <div class="descheader">
-                    Partially Cloudy
+                <div class="descheader" id="descheader">
+                    
                 </div>
-                <div class="condition">
-                    Similar temperatures continuing with no rain expected.
+                <div class="condition" id="condition">
+                    
                 </div>
             </div>
             <div class="weathertemperatures">
-                <div class="temperature">
-                    8° C
+                <div class="temperature" id="temperature">
+                    
                 </div>
                 <div class="weatherinfogrid">
                     <div class="weatherinfo">
@@ -46,16 +45,16 @@
                         <div class="col">Humidity</div>
                     </div>
                     <div class="weatherinfo">
-                        <div class="col">22F</div>
-                        <div class="col">41%</div>
+                        <div class="col" id="feels"></div>
+                        <div class="col" id="humidity"></div>
                     </div>
                     <div class="weatherinfo">
                         <div class="col">Wind Speed</div>
-                        <div class="col">Wind Gust</div>
+                        <div class="col" >Wind Gust</div>
                     </div>
                     <div class="weatherinfo">
-                        <div class="col">4.3 MPH</div>
-                        <div class="col">4.3 MPH</div>
+                        <div class="col"  id="wind"></div>
+                        <div class="col" id="gust"></div>
                     </div>
                 </div>
             </div>
