@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <header>
+        Sindri's Weather App 
+        <div class="searchwrapper">
+            <div class="locationwrapper">
+                <input type="search" id="weather-search" placeholder="Search Weather">
+                <button type="button" onclick="searchWeather()">Search</button>
+            </div>
+            <div class="unitwrapper">
+                <label for="units">Unit:</label>
+                <select name="units" id="units">
+                    <option value="US">US</option>
+                    <option value="metric">Metric</option>
+                </select>
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+    </header>
+    <div class="weatherwrapper">
+        <div class="weatherheader">
+            Reykjavíkurborg, Ísland
+        </div>
+        <div class="weatherelementswrapper">
+            <div class="weatherdescription">
+                <div class="descheader">
+                    Partially Cloudy
+                </div>
+                <div class="condition">
+                    Similar temperatures continuing with no rain expected.
+                </div>
+            </div>
+            <div class="weathertemperatures">
+                <div class="temperature">
+                    8° C
+                </div>
+                <div class="weatherinfogrid">
+                    <div class="weatherinfo">
+                        <div class="col">Feels like</div>
+                        <div class="col">Humidity</div>
+                    </div>
+                    <div class="weatherinfo">
+                        <div class="col">22F</div>
+                        <div class="col">41%</div>
+                    </div>
+                    <div class="weatherinfo">
+                        <div class="col">Wind Speed</div>
+                        <div class="col">Wind Gust</div>
+                    </div>
+                    <div class="weatherinfo">
+                        <div class="col">4.3 MPH</div>
+                        <div class="col">4.3 MPH</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="weatherapp.js"></script>
+</body>
+</html>
