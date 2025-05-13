@@ -40,7 +40,7 @@ header {
     gap: 10px;
     flex-direction:column;
     width: 100%;
-    height: 50%;
+    height:auto;
     justify-content:center;
     background-color: hsla(0, 100%, 30%, 0.3);
     max-width: 1000px;
@@ -61,7 +61,8 @@ header {
     display:flex;
     justify-content:space-evenly;
     width: 100%;
-    height:80%;
+    flex-wrap:wrap;
+    height:auto;
 }
 
 .weatherdescription {
@@ -132,4 +133,9 @@ header {
 
 .futureweathergrid {
     display:flex;
+}
+
+img {
+    max-width: 100%;
+    height:auto;
 }
